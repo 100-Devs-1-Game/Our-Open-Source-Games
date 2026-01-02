@@ -9,7 +9,7 @@ for path in sorted(glob.glob("items/*.yaml")):
 
     OUT.append(f"## {g['title']}\n")
     OUT.append(f"{g['description']}\n\n")
-    OUT.append(f"![Screenshot]({g['screenshot']})\n\n")
+    OUT.append(f"![Screenshot](screenshots/{g['screenshot']}.png)\n\n")
     OUT.append(f"[Repo]({g['repo']}) | [itch.io]({g['itch']}) | [Discord]({g['discord']})")
     if 'gdd' in g and g['gdd']:
       OUT.append(f" | [Game Design Document]({g['gdd']})")
