@@ -4,6 +4,7 @@ import yaml
 OUT = ["# Our Games\n"]
 
 for path in sorted(glob.glob("items/*.yaml")):
+    print(f"Processing {path}...")
     with open(path) as f:
         g = yaml.safe_load(f)
 
